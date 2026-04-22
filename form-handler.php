@@ -79,7 +79,7 @@ $body .= str_repeat('-', 50) . "\n";
 $body .= "Submitted   : " . date('Y-m-d H:i:s') . "\n";
 $body .= "IP Address  : " . ($_SERVER['REMOTE_ADDR'] ?? 'unknown') . "\n";
 
-$headers  = "From: noreply@premierauthorhouse.com\r\n";
+$headers  = "From: info@premierauthorhouse.com\r\n";
 $headers .= "Reply-To: {$email}\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
 $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
