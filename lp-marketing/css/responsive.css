@@ -1,0 +1,1355 @@
+@media (max-width:1600px) {
+    .banner {
+        padding-top: 11%;
+    }
+
+    .contact-form-control input {
+        margin-bottom: 31px;
+    }
+
+    .features-area {
+        margin-bottom: 346px;
+    }
+}
+
+@media (max-width:1440px) {}
+
+@media (max-width: 1366px) {
+    .address-banner {
+        height: 325px;
+    }
+}
+
+@media (max-width: 1280px) {
+
+    .contact-address p {
+        padding: 40px 0 22px 0;
+        margin-bottom: 22px;
+    }
+
+    .main-contact {
+        height: auto;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .hd-pd {
+        padding-right: 20px;
+    }
+
+    .banner {
+        padding-top: 120px;
+    }
+
+    .discount-tag h3 sup {
+        font-size: 11px;
+        top: -17px;
+    }
+
+    .discount-tag h3 sub {
+        font-size: 11px;
+        top: -2px;
+    }
+
+    .discount-tag h3 {
+        font-size: 37px;
+    }
+
+    .form-title {
+        padding: 30px 15px 16px;
+    }
+
+    .form-title h3 {
+        font-size: 18px;
+    }
+
+    .form-title h3::before {
+        top: -10px;
+    }
+
+    .form-middle h3 span {
+        font-size: 20px;
+    }
+
+    .form-middle h3 {
+        font-size: 14px;
+    }
+
+    .form-btn1 button {
+        font-size: 16px;
+    }
+
+    .form-btn1 p {
+        font-size: 13px;
+    }
+
+    .banner-content h3 {
+        font-size: 22px;
+        line-height: 50px;
+    }
+
+    .banner-content h3 span {
+        font-size: 45px;
+    }
+
+    .banner-content p {
+        font-size: 15px;
+    }
+
+    .industry-counter-text span {
+        font-size: 21px;
+    }
+
+    .industry-counter-text h3 {
+        font-size: 13px;
+    }
+
+    .circle-text li {
+        font-size: 16px;
+    }
+
+    .circle-text li i {
+        margin-right: 15px;
+        font-size: 11px;
+    }
+
+    .circle-area::before {
+        top: -135px;
+        transform: scale(0.80);
+        right: -108px;
+    }
+
+    .cr-li2::before {
+        left: -111%;
+        transform: scale(0.90);
+    }
+
+    .expect {
+        padding-top: 70px;
+    }
+
+    .expect-content h3 span {
+        font-size: 39px;
+    }
+
+    .cta1-text h3 {
+        font-size: 23px;
+    }
+
+    .cta1-text p {
+        font-size: 15px;
+    }
+
+    .cta1-btn1 {
+    }
+
+    .cta1-contact.d-flex.justify-content-between.align-items-center {
+    flex-wrap: wrap;
+}
+
+    .cta1-btn2 {
+    }
+
+    .cta-phone {
+        font-size: 14px;
+    }
+
+    .cta1-img img {
+        width: 67%;
+    }
+
+    .cta1 {
+        margin-top: 85px;
+    }
+
+    .cover-box p {
+        font-size: 14px;
+    }
+
+    .cover-box h4 {
+        font-size: 20px;
+    }
+
+    .feature-box h3 {
+        font-size: 18px;
+    }
+
+    .feature-box p {
+        font-size: 12px;
+    }
+
+    .btn-default {
+        font-size: 12px;
+    }
+
+    .service-cta-text p {
+        font-size: 26px;
+    }
+
+    .nav-tabs li .nav-link,
+    .nav-tabs li .nav-link:hover {
+        padding: 16px 96px 16px 0px;
+    }
+
+    .nav-tabs .nav-link.active::before {
+        top: 31px;
+    }
+
+    .client-box p {
+        font-size: 12px;
+    }
+
+    .contact-rolling h3 {
+        font-size: 42px;
+    }
+
+    .contact-address p {
+        font-size: 20px;
+    }
+
+    .contact-address::before {
+        top: 140px;
+        right: 163px;
+    }
+
+    .contact-address a {
+        font-size: 21px;
+    }
+
+    .contact-form h3 {
+        margin-top: 10px;
+    }
+
+    .contact-detail button {
+        display: none;
+    }
+
+    .expect-icons li {
+        padding: 25px 10px;
+    }
+}
+
+@media (max-width: 991px) {
+    .main-header {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .header-contact {
+        flex-wrap: wrap;
+        padding: 0;
+        width: 50%;
+        justify-content: flex-end;
+    }
+    .logo-area {
+        padding: 0;
+        width: 50%;
+    }
+    header {        
+        padding: 1em 0;
+    }
+    .discount-tag h3 sup {
+        font-size: 9px;
+        top: -10px;
+        left: 2px;
+    }
+
+    .form-title h3 {
+
+        font-size: 13px;
+
+    }
+
+    .circle-area::before {
+
+        top: -135px;
+        transform: scale(0.70);
+        right: -59%;
+
+    }
+
+    .circle-text li.list3 {
+
+        padding-left: 14px;
+
+    }
+
+    .cr-li2::before {
+        left: -154%;
+        transform: scale(0.80);
+        top: -91px;
+    }
+
+    .form-title {
+
+        padding: 24px 15px 13px;
+
+    }
+
+    .form-title h3::before {
+        width: 45px;
+    }
+
+    .discount-tag h3 {
+
+        font-size: 27px;
+
+    }
+
+    .discount-tag h3 sub {
+
+        font-size: 10px;
+        top: 0px;
+
+    }
+
+    .form-middle h3 {
+
+        font-size: 11px;
+
+    }
+
+    .form-middle {
+        padding: 7px 18px;
+
+    }
+
+    .form-middle h3 span {
+
+        font-size: 15px;
+
+    }
+
+    .entry-box5 .form-control {
+        min-height: 33px;
+        font-size: 11px;
+    }
+
+    .entry-box5 .form-group {
+
+        margin-bottom: 14px;
+
+    }
+
+    .form-area {
+
+        padding: 17px 22px;
+
+    }
+
+    .form-btn1 button {
+        font-size: 11px;
+    }
+
+    .form-btn1 p {
+        font-size: 10px;
+        margin-top: 15px;
+    }
+
+    .banner-content h3 {
+
+        font-size: 21px;
+        line-height: 35px;
+
+    }
+
+    .banner-content h3 span {
+
+        font-size: 33px;
+
+    }
+
+    .banner-content p {
+
+        font-size: 11px;
+
+    }
+
+    .banner-btn {
+    margin-bottom: 1em;
+    }
+
+    .gold-btn,
+    .cta1-btn1,
+    .btn-default1{
+    font-size: 12px;
+}
+
+    .contact-detail a {
+        font-size: 15px;
+    }
+
+    .industry-counter-text {
+        text-align: center;
+        padding: 10px 0px;
+    }
+
+    .content-text h3 span {
+        font-size: 30px;
+    }
+
+    .content-text p {
+        font-size: 14px;
+    }
+
+    .expect-content h3 {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .expect-content h3 span {
+        font-size: 29px;
+    }
+
+    .expect-content p {
+        font-size: 11px;
+    }
+
+    .expect-icons li {
+        padding: 25px 6px;
+    }
+
+    .expect-icons li p {
+        font-size: 12px;
+    }
+
+    .circle-text li {
+
+        font-size: 12px;
+        line-height: 68px;
+
+    }
+
+    .circle-text li i {
+
+        margin-right: 7px;
+        font-size: 7px;
+
+    }
+
+    .cr-li2 {
+
+        padding-top: 168px;
+        padding-left: 5px;
+
+    }
+
+    .expect {padding-top: 60px;height: auto;}
+
+    .cta1 {margin-top: 49px;}
+
+    .cta1-text h3 {
+
+        font-size: 17px;
+
+    }
+
+    .cta1-text {
+
+        padding-left: 30px;
+
+    }
+
+    .cta1-text p {
+
+        font-size: 11px;
+
+    }
+
+    .cta1-btn2 {}
+
+    .cta1-btn1 {}
+
+    .cta-phone i {
+
+        margin-right: 5px;
+
+    }
+
+    .cta-phone {
+
+        font-size: 12px;
+
+    }
+
+    .sec-heading h2 {
+        font-size: 35px;
+    }
+
+    .sec-heading {
+
+        margin-bottom: 25px;
+
+    }
+
+    .service {
+
+        padding-top: 40px;
+
+    }
+
+    .bottom-padding-90 {
+        padding-bottom: 40px;
+    }
+
+    .cover {}
+
+    .sec-padding {padding: 4em 0;}
+
+    .cover-box h4 {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .cover-box p {
+
+        font-size: 10px;
+
+    }
+
+    .feature-box h3 {
+        font-size: 20px;
+    }
+
+    .feature-box p {
+
+        font-size: 15px;
+
+    }
+
+    .features-area {
+        height: auto;
+    }
+
+    .features-btn {}
+
+    .features-area {margin-bottom: 0;}
+
+    .service-cta-text p {
+
+        font-size: 21px;
+
+    }
+
+    .btn-default {
+    }
+
+    .arrow-btn-box-5 {
+    }
+
+    .client-box p {
+
+        font-size: 16px;
+    }
+
+    .work-portfolio .owl-dots {
+
+        position: initial;
+
+    }
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        border: none;
+    }
+
+    .nav-tabs li .nav-link,
+    .nav-tabs li .nav-link:hover {
+        border: none;
+        padding: 16px;
+    }
+
+    .portfolio-tabs .row .col-lg-3 {
+        justify-content: center;
+        display: flex;
+    }
+
+    .nav.nav-tabs {
+        border: none;
+        margin-bottom: 16px;
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    .nav-tabs .nav-link.active::before {
+        display: none;
+    }
+
+    .nav-tabs .nav-item {
+        display: inline-block;
+    }
+
+    .main-contact {
+        height: auto;
+        padding: 50px 0
+    }
+
+    .main-contact img {
+        display: none
+    }
+
+    .contact-address {
+        padding-bottom: 30px
+    }
+
+    .contact-rolling {
+        background-color: #1f1f1f;
+        text-align: left
+    }
+
+    .contact-rolling h3 br {
+        display: none
+    }
+
+    .contact-address::before {
+        display: none
+    }
+
+    .contact-address p {
+        padding: 0 0 20px 0;
+        margin-right: 0;
+        margin-bottom: 20px
+    }
+
+    .feature-box img {
+        width: 94px !important;
+    }
+
+    .copy-text ul li {
+        border: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-detail a {
+        display: block;
+    }    
+    .logo-area img {
+        width: 200px;    
+    }
+
+    .contact-detail a {
+        font-size: 14px;
+    }
+
+    .hd-pd {
+
+        padding-right: 0px;
+        padding-top: 10px;
+
+    }
+
+    .banner-content {
+
+        padding-top: 70px;
+        padding-bottom: 45px;
+
+    }
+
+    .banner-content h3 {
+
+        font-size: 38px;
+        line-height: 58px;
+
+    }
+
+    .banner-content h3 span {
+
+        font-size: 59px;
+
+    }
+
+    .banner-content p {
+
+        font-size: 17px;
+
+    }
+
+    .banner-btn {}
+
+    .discount-tag h3 sub {
+
+        font-size: 22px;
+        top: 0px;
+        left: -10px;
+
+    }
+
+    .discount-tag h3 sup {
+
+        font-size: 21px;
+        top: -23px;
+        left: 9px;
+
+    }
+
+    .discount-tag h3 {
+
+        font-size: 52px;
+
+    }
+
+    .form-title {
+
+        padding: 30px 39px 13px;
+
+    }
+
+    .form-title h3 {
+
+        font-size: 30px;
+
+    }
+
+    .form-title h3::before {
+
+        width: 71px;
+
+    }
+
+    .form-middle {
+
+        padding: 7px 50px;
+
+    }
+
+    .form-middle h3 span {
+
+        font-size: 34px;
+
+    }
+
+    .form-middle h3 {
+
+        font-size: 24px;
+
+    }
+
+    .form-area {
+
+        padding: 22px;
+
+    }
+
+    .entry-box5 .form-control {
+
+        min-height: 45px;
+        font-size: 13px;
+
+    }
+
+    .form-btn1 button {font-size: 16px;}
+
+    .form-btn1 p {
+
+        font-size: 14px;
+        margin-top: 20px;
+
+    }
+
+    .portfolio-content-bg {
+        display: none;
+    }
+
+    .portfolio-content .portfolio-content-inner {
+
+        min-height: initial;
+
+    }
+
+    .title-style br {
+        display: none;
+    }
+
+    .expect::before {
+        display: none;
+    }
+
+    .circle-area::before {
+        display: none;
+    }
+
+    .cr-li1 {
+
+        padding-top: 17px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .circle-text li.list1 {
+
+        padding-left: 0px;
+
+    }
+
+    .circle-text li.list3 {
+
+        padding-left: 0px;
+
+    }
+
+    .circle-text li.list4 {
+
+        display: inline-block;
+
+    }
+
+    .cr-li2 {
+        display: none;
+
+    }
+
+    header {
+        background: #00000017;
+    }
+
+    .circle-text li {
+
+        display: inline-block;
+        line-height: 24px;
+        padding: 0px 0px 0px 15px !important;
+        width: 50%;
+        margin: 0;
+        line-height: 20px !important;
+
+    }
+
+    .feature-box {
+        min-height: 340px;
+    }
+
+    .circle-text li i {
+        top: 7px;
+    }
+
+    .expect-content p {
+
+        font-size: 20px;
+
+    }
+
+    .expect-content h3 {
+
+        font-size: 33px;
+        line-height: 55px;
+
+    }
+
+    .expect-content h3 span {
+
+        font-size: 52px;
+
+    }
+
+    .expect-icons li p {
+
+        font-size: 20px;
+
+    }
+
+    .expect-icons li {
+        padding: 25px 23px;
+    }
+
+    .circle-text li i {
+
+        margin-right: 19px;
+        font-size: 11px;
+
+    }
+
+    .circle-text li {
+
+        font-size: 20px;
+        line-height: 24px;
+
+    }
+
+    .expect {padding-top: 40px;}
+
+    .cta1-text {
+
+        padding-left: 25px;
+        padding-right: 25px;
+
+    }
+
+    .cta1-text h3 {
+
+        font-size: 22px;
+
+    }
+
+    .cta1-text p {
+
+        font-size: 14px;
+
+    }
+
+    .cta1-btn2 {}
+
+    .cta1-btn1 {}
+
+    .cta-phone {
+
+        font-size: 14px;
+
+    }
+
+    .cta1-img img {
+
+        display: none;
+
+    }
+
+    .cover {}
+
+    .cover .row {
+    justify-content: center;
+}
+
+    .cover-box img {
+        width: 100%;
+    }
+
+    .cover-box {
+        text-align: center;
+    }
+
+    .cover-box h4 {
+
+        font-size: 29px;
+
+    }
+
+    .cover-box p {
+
+        font-size: 14px;
+
+    }
+
+    .cover .row .col-md-6 {
+        display: none;
+    }
+
+    .cvr-alignment {
+        margin-top: 25px;
+    }
+
+    .feature-box h3 {
+
+        font-size: 25px;
+
+    }
+
+    .feature-box p {
+
+        font-size: 19px;
+
+    }
+
+    .service-cta-text p {
+
+        font-size: 24px;
+
+    }
+
+    .btn-default {}
+
+    .arrow-btn-box-5 {}
+
+    .sec-heading h2 {
+
+        font-size: 32px;
+
+    }
+
+    .nav-tabs li .nav-link,
+    .nav-tabs li .nav-link:hover {
+
+        padding: 10px 10px;
+        font-size: 18px;
+
+    }
+
+    .nav-tabs .nav-link.active::before {
+        width: 45px;
+        top: 37px;
+        right: 23px;
+
+    }
+
+    .client-box p {
+
+        font-size: 20px;
+
+    }
+
+    .service-cta {
+        padding: 40px 0px;
+    }
+
+    .copy-text ul li a {
+        font-size: 13px;
+    }
+
+    .copyright-detail p {
+        font-size: 13px;
+    }
+
+    .entry-box {
+        width: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .logo-area img {
+        width: 180px;
+    }
+
+    .contact-detail a span {
+        display: none;
+    }
+
+    .header-contact {
+    }
+
+    .contact-detail a i {
+
+        margin-right: 21px;
+        font-size: 30px;
+
+    }
+
+    .banner {
+        padding-bottom: 25px;
+    }
+
+    .banner-content h3 {
+
+        font-size: 23px;
+        line-height: 30px;
+
+    }
+
+    .banner-content h3 span {
+
+        font-size: 30px;
+        line-height: 38px;
+
+    }
+
+    .banner-content p {
+
+        font-size: 12px;
+        margin-bottom: 20px;
+
+    }
+
+    .banner-content {
+
+        padding-top: 0;
+
+    }
+
+    .banner .p-0 {
+        padding: 0px 15px !important;
+    }
+
+    .banner-btn {}
+
+    .discount-tag h3 {
+
+        font-size: 29px;
+
+    }
+
+    .form-title h3 {
+
+        font-size: 18px;
+
+    }
+
+    .form-title {
+
+        padding: 25px 10px 13px;
+
+    }
+
+    .discount-tag h3 sub {
+
+        font-size: 11px;
+        top: 0px;
+        left: -7px;
+
+    }
+
+    .discount-tag h3 sup {
+
+        font-size: 11px;
+        top: -12px;
+        left: 2px;
+
+    }
+
+    .form-middle {
+
+        padding: 7px 10px;
+
+    }
+
+    .form-middle h3 {
+
+        font-size: 15px;
+
+    }
+
+    .form-middle h3 span {
+
+        font-size: 21px;
+
+    }
+
+    .form-box1 .p-0 {
+        padding: 0px 0px !important;
+    }
+
+    .entry-box5 .form-control {
+        min-height: 40px;
+    }
+
+    .form-btn1 button {
+        font-size: 14px;
+    }
+
+    .form-btn1 p {
+
+        margin-top: 20px;
+
+    }
+
+    .industry-counter-text span {
+
+        font-size: 18px;
+
+    }
+
+    .industry-counter-text h3 {
+
+        font-size: 10px;
+
+    }
+
+    .sec-heading h2 {
+
+        font-size: 27px;
+
+    }
+
+    .content-left-margin-40 {
+
+        margin-left: 0px;
+
+    }
+
+    .content-text h3 span {
+
+        font-size: 22px;
+
+    }
+
+    .content-text p {
+        font-size: 13px;
+        padding: 13px 0;
+
+    }
+
+    .expect-content h3 {
+
+        font-size: 20px;
+        line-height: 32px;
+
+    }
+
+    .expect-content h3 span {
+
+        font-size: 31px;
+
+    }
+
+    .expect-content p {
+
+        font-size: 13px;
+
+    }
+
+    .expect-icons {
+
+        margin-top: 0px;
+
+    }
+
+    .expect-icons li p {
+        font-size: 12px;
+    }
+
+    .expect-icons li {
+        padding: 25px 10px;
+    }
+
+    .circle-text li i {
+
+        margin-right: 11px;
+        font-size: 7px;
+
+    }
+
+    .circle-text li {
+
+        font-size: 14px;
+    }
+
+    .cta1-btn2 {
+        display: none;
+
+    }
+
+    .cta-phone {
+
+        font-size: 12px;
+
+    }
+
+    .cta1-btn1 {}
+
+    .cover {}
+
+    .cover-box h4 {
+
+        font-size: 25px;
+
+    }
+
+    .cover-box p {
+
+        font-size: 13px;
+
+    }
+
+    .feature-box img {
+
+        width: 110px !important;
+
+    }
+
+    .feature-box h3 {
+
+        font-size: 20px;
+
+    }
+
+    .feature-box p {
+
+        font-size: 11px;
+
+    }
+
+    .features-area {}
+
+    .service-cta-text p {
+
+        font-size: 14px;
+
+    }
+
+    .arrow-btn-box-5 {}
+
+    .btn-default {}
+
+    .client-box p {
+
+        font-size: 15px;
+
+    }
+
+    .contact-rolling h3 {
+
+        font-size: 32px;
+
+    }
+
+    .contact-address p {
+
+        font-size: 18px;
+
+    }
+
+    .contact-address a {
+
+        font-size: 19px;
+
+    }
+
+    .contact-form h3 {
+
+        font-size: 35px;
+
+    }
+
+    .contact-form-control input {
+
+        margin-bottom: 18px;
+        height: 43px;
+
+    }
+
+    .btn-default1 {}
+
+    .copyright-detail {
+
+        display: block;
+        text-align: center;
+
+    }
+
+    .copyright-detail p {
+        padding-bottom: 15px;
+    }
+
+    .main-portfolio {
+        padding: 30px 0px;
+    }
+
+    .copy-text {
+        justify-content: center;
+    }
+
+    .portfolio-tabs .row {
+        margin-left: 0;
+    }
+
+    .entry-box .text-1 h1 {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+
+    .entry-box .text-1 p {
+        font-size: 11px;
+        line-height: 18px;
+    }
+
+    .entry-box .form-control {
+        min-height: 40px;
+        font-size: 13px;
+    }
+
+    .entry-box button {
+        font-size: 14px;
+    }
+    .logo-area,
+    .header-contact {
+        width: auto;
+    }
+}

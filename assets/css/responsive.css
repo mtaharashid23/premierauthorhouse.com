@@ -1,0 +1,663 @@
+@media screen and (max-width:1440px) {
+.main-banner {
+    height: 635px;
+}
+.banner-text-wrap p {
+    padding: 35px 0px 35px;
+}
+.main-welcome:before {
+    left: -160px;
+}
+.main-welcome:after {
+    right: -240px;
+}
+.choose-carousel .owl-nav button.owl-prev {
+    left: -105px;
+}
+.choose-carousel .owl-nav button.owl-next {
+    right: -105px;
+}
+.main-testi .owl-nav button.owl-prev {
+    left: -15px;
+}
+.main-testi .owl-nav button.owl-next {
+    right: -15px;
+}
+.footer-form-img {
+    top: 110px;
+}
+.arrow-down {
+    bottom: -30px;
+    z-index: 1;
+}
+.process-circle {
+    width: 170px;
+    height: 170px;
+}
+.process-circle h2 {
+    font-size: 110px;
+}
+.process-circle h3 {
+    font-size: 22px;
+}
+.process-circle::before {
+    bottom: -25px;
+    right: -90px;
+}
+.inner-process-wrap div[class^="col"]:nth-child(2) .process-box-wrap .process-circle::before {
+    top: -24px;
+}
+.inner-process-wrap div[class^="col"]:nth-child(4) .process-box-wrap .process-circle:before {
+    top: -24px;
+}
+.process-box-wrap p {
+    font-size: 11px;
+    line-height: 20px;
+}
+.faqs .faq-top:before {
+    width: 217px;
+    height: 245px;
+}
+.faqs .faq-top:after {
+    width: 270px;
+    height: 250px;
+}
+.faqs:before {
+    width: 215px;
+    height: 200px;
+}
+.faqs:after {
+    width: 148px;
+    height: 165px;
+    right: -31px;
+}
+.logo {  margin-right: 1rem; }
+.logo img{ width: 200px; }
+}
+@media screen and (max-width:1280px) {
+.header-contact ul li a {
+    font-size: 13px;
+}
+.header-menu .navbar-light .navbar-nav .nav-link {
+    font-size: 14px;
+}
+.main-welcome::before {
+    left: -175px;
+}
+.main-welcome::after {
+    right: -280px;
+}
+.choose-carousel .owl-nav button.owl-prev {
+    left: -85px;
+}
+.choose-carousel .owl-nav button.owl-next {
+    right: -85px;
+}
+}
+@media screen and (max-width:1199px) {
+.header-contact ul li a {
+    font-size: 12px;
+    margin-left: 17px;
+}
+.header-menu .navbar-light .navbar-nav .nav-link {
+    font-size: 13px;
+}
+.banner-text-wrap h3 {
+    font-size: 75px;
+}
+.welcome-text h3 {
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+.welcome-text p {
+    padding-bottom: 20px;
+}
+.welcome-number p span {
+    font-size: 24px;
+}
+.main-welcome::before {
+    display: none;
+}
+.main-welcome::after {
+    display: none;
+}
+.main-welcome {
+    height: auto;
+    padding: 85px 0px;
+}
+.banner-btn {
+    padding: 8px 16px;
+}
+.feature-box-text {
+    bottom: 10px;
+}
+.feature-box-text h3 {
+    font-size: 16px;
+}
+.heading h3 {
+    font-size: 50px;
+}
+.main-cta .heading p {
+    font-size: 22px;
+}
+.main-cta {
+    height: 440px;
+}
+.choose-box-wrap h3 {
+    font-size: 17px;
+}
+.choose-box-wrap p {
+    font-size: 12px;
+}
+.choose-carousel .owl-nav {
+    display: none;
+}
+.portfolio-tab .nav-tabs .nav-link {
+    padding: 10px 20px;
+    margin-left: 12px;
+    font-size: 16px;
+}
+.main-portfolio {
+    height: auto;
+}
+.footer-form-wrap .heading h3 {
+    font-size: 48px;
+}
+.main-contact-form {
+    height: auto;
+}
+.padding-right {
+    padding-right: 25px;
+}
+.footer-menu ul li a {
+    font-size: 13px;
+}
+.header-menu .dropdown-item {
+    padding: 9px 25px;
+    font-size: 16px;
+}
+.process-circle::before {
+    bottom: -25px;
+    right: -93px;
+}
+.process-circle {
+    width: 178px;
+    height: 178px;
+}
+.process-circle h2 {
+    font-size: 125px;
+}
+.process-circle h3 {
+    font-size: 25px;
+}
+.process-box-wrap p {
+    font-size: 13px;
+}
+.inner-process-wrap div[class^="col"]:nth-child(2) .process-box-wrap .process-circle::before {
+    top: -25px;
+    right: -80px;
+}
+.inner-contact-form-wrap .contact-form-control textarea {
+    height: 170px;
+}
+.logo img{ width: 170px; }
+}
+@media screen and (max-width:991px) {
+.header-address {
+    display: none;
+}
+.header-bottom [class*=col-] .header-contact{
+    display: none;
+}
+.header-bottom .row {
+    flex-direction: row-reverse;
+}
+.header-bottom {
+    height: auto;
+    padding: 20px 0px;
+}
+.main-header .container-fluid{ padding: 0px 20px; }
+.header-logo {
+    left: 0;
+    position: absolute;
+    top: 10px;
+}
+.header-menu{ 
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+    float: right;
+    margin-top: 15px;
+ }
+.header-menu .navbar {
+    justify-content: flex-end;
+    position: initial;
+}
+.header-menu .navbar-collapse{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+    top: 60px;
+    left: 0;
+}
+.header-menu .nav-item {
+    width: 100%;
+    border-bottom: 1px solid var(--primary-color);
+    text-align: left;
+}
+.header-menu .navbar-light .navbar-nav .nav-link {
+    padding: 7px 15px;
+    font-size: 14px;
+    color: #313131;
+}
+.header-menu .navbar-light .navbar-nav .nav-item:first-child .nav-link {
+    padding-left: 15px;
+}
+.header-menu .dropdown-item {
+    padding: 3px 35px;
+    font-size: 12px;
+    color: #2c2c2c;
+    border-bottom: none;
+}
+.header-menu .navbar-light .navbar-toggler {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.banner-text-wrap h3 {
+    font-size: 55px;
+}
+.banner-text-wrap p {
+    padding: 10px 0px 15px;
+    font-size: 15px;
+}
+.main-banner {
+    height: auto;
+    padding: 40px 0px;
+}
+.header-top {
+    height: auto;
+    padding: 14px 0px 7px;
+}
+.arrow-down {
+    display: none;
+}
+.heading h2:before{
+	display: none;
+}
+.heading h2:after{
+	display: none;
+}
+.main-welcome {
+    height: auto;
+    padding: 45px 0px;
+}
+.welcome-img{
+	display: none;
+}
+.welcome-wrap {
+    margin-top: 30px;
+}
+.main-feature {
+    height: auto;
+    padding: 44px 0px 45px;
+}
+.feature-box-text h3 {
+    font-size: 16px;
+    display: block;
+    padding-bottom: 20px;
+}
+.feature-box-text h3:before{
+	display: none;
+}
+.feature-box-text h3:after{
+	display: none;
+}
+.heading h3 {
+    font-size: 35px;
+}
+.main-cta {
+    height: auto;
+    padding: 40px 0px;
+}
+.choose-box-wrap p {
+    font-size: 14px;
+}
+.portfolio-tab .nav-tabs .nav-link {
+    padding: 7px 14px;
+    margin-left: 10px;
+    font-size: 13px;
+}
+.main-portfolio {
+    padding: 80px 0px;
+}
+.main-choose {
+    height: auto;
+    padding: 40px 0px;
+}
+.portfolio-slider{
+	margin: 0px;
+}
+.portfolio-tab-img {
+    padding-top: 35px;
+}
+.testi-box p {
+    padding: 0px 10px;
+}
+.testi-carousel .owl-nav {
+    display: none;
+}
+.main-testi {
+    height: auto;
+    padding: 40px 0px 70px;
+}
+.footer-form-img {
+	display: none;
+}
+.main-contact-form {
+    padding: 40px 0px 60px;
+}
+.contact-form {
+    padding-top: 20px;
+}
+.footer-form-wrap {
+    padding-top: 0px;
+}
+.quick-menu {
+    padding-left: 0;
+}
+.padding-right {
+    padding-right: 5px;
+}
+.inner-service-box {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 15px;
+    height: auto !important;
+}
+.inner-service-wrap {
+    margin-top: 25px;
+}
+.inner-services{
+    padding: 65px 0px;
+}
+.process-circle:before{
+    display: none;
+}
+.process-box-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inner-process-wrap {
+    padding: 35px 0px;
+}
+.inner-contact {
+    height: auto;
+}
+.hours-box {
+    margin-top: 10px;
+}
+.working-hours-wrap {
+    margin-top: 30px;
+}
+.inner-contact-box p, .inner-contact-box p a {
+    font-size: 12px;
+    padding: 0px 20px;
+}
+.inner-contact-form-wrap {
+    padding-top: 43px;
+}
+.main-footer:before {
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+}
+.footer-menu ul li a {
+    font-size: 12px;
+}
+.inner-faqs-wrap .card-header .btn {
+    font-size: 14px;
+}
+.myaccordion .card-header .btn {
+    font-size: 25px;
+}
+.faqs .faq-top{
+    display: none;
+}
+.faqs:before {
+    display: none;
+}
+.faqs:after {
+   display: none;
+}
+.myaccordion .card-header .btn {
+    font-size: 18px;
+}
+}
+@media screen and (max-width:767px) {
+.banner-text-wrap h3 {
+    font-size: 40px;
+}
+.banner-text-wrap p br{
+	display: none;
+}
+.main-feature .heading h3 {
+    padding: 0px 0px;
+}
+.heading h3 {
+    font-size: 30px;
+}
+.heading h2 {
+    font-size: 20px;
+}
+.main-cta .heading p {
+    font-size: 18px;
+}
+.cta-btn-wrap .welcome-number p{
+	display: none;
+}
+.main-choose .heading p {
+    font-size: 19px;
+}
+.portfolio-tab .nav-tabs .nav-link {
+    margin-bottom: 10px;
+}
+.portfolio-tab .nav-tabs {
+    justify-content: center;
+}
+.padding-right {
+    padding-right: 0;
+}
+.footer-menu ul li a {
+    font-size: 10px;
+}
+.service-menu {
+    padding-left: 0;
+}
+.footer-menu h3 {
+    font-size: 19px;
+    padding-bottom: 15px;
+}
+.footer-social-wrap {
+    padding: 15px 0px;
+}
+.footer-copyright-wrap {
+    padding: 25px 0px;
+}
+.inner-service-box p {
+    font-size: 15px;
+    margin-top: 20px;
+}
+.process-box-wrap {
+    padding: 0px 0px;
+}
+.inner-process-wrap .row{
+    margin: 0px;
+}
+.inner-contact-box {
+    height: 225px;
+    margin-bottom: 20px;
+}
+.inner-contact-box h3 {
+    padding: 20px 0px 10px;
+}
+.inner-contact-form-wrap .contact-form-control input {
+    height: 50px;
+    margin-bottom: 20px;
+}
+.inner-contact-form-wrap .contact-form-control textarea {
+    height: 120px;
+    margin-bottom: 20px;
+}
+.inner-contact {
+    height: auto;
+    padding: 30px 0px 90px;
+}
+.hours-box {
+    padding: 25px 50px;
+}
+.hours-box ul li {
+    padding-bottom: 15px;
+}
+.hours-box:before{
+    display: none;
+}
+.writing-resource-para {
+    padding: 0px 0px;
+}
+.writing-resource-para p {
+    font-size: 14px;
+    padding-top: 0;
+}
+.review-box {
+    text-align: center;
+}
+.client-img {
+    border: none;
+}
+.reviews {
+    padding: 30px 0px 85px;
+}
+.client-img img {
+    width: 40%;
+    margin-bottom: 30px;
+}
+.main-footer:before {
+    display: none;
+}
+.myaccordion .card-header .btn {
+    font-size: 18px;
+}
+}
+@media screen and (max-width:480px) {
+.footer-menu ul {
+    display: block;
+}
+.header-social ul li a i {
+    font-size: 15px;
+    padding-right: 12px;
+}
+.header-top {
+    padding: 7px 0px 7px;
+}
+.inner-faqs-wrap .card-header .btn {
+    font-size: 12px;
+}
+.inner-faqs-wrap .card-body p {
+    font-size: 14px;
+}
+}
+@media screen and (max-width:414px) {
+	.banner-text-wrap h3 {
+    font-size: 28px;
+}
+.banner-text-wrap p {
+    padding: 6px 0px 13px;
+    font-size: 12px;
+}
+.banner-btn {
+    padding: 7px 12px;
+    font-size: 12px;
+}
+.welcome-text h3 {
+    font-size: 19px;
+    padding-bottom: 20px;
+}
+.welcome-text p {
+	font-size: 13px;
+    padding-bottom: 14px;
+}
+.welcome-number p {
+    font-size: 13px;
+    padding-left: 8px;
+}
+.main-feature .heading p {
+    font-size: 17px;
+}
+.heading h3 {
+    font-size: 20px;
+}
+.main-cta .heading p {
+    font-size: 15px;
+}
+.testi-box p {
+    font-size: 12px;
+}
+.footer-form-wrap .heading h3 {
+    font-size: 35px;
+}
+.footer-social-wrap h3 {
+    padding-right: 0;
+    padding-bottom: 20px;
+}
+.footer-social-wrap {
+    flex-direction: column;
+}
+.footer-copyright-wrap h3 {
+    font-size: 12px;
+}
+.footer-copyright-wrap p {
+    font-size: 11px;
+}
+.main-contact-form {
+    padding: 40px 0px 90px;
+}
+.inner-service-box h3 {
+    font-size: 23px;
+}
+.inner-service-box p {
+    font-size: 13px;
+    margin-top: 7px;
+}
+.myaccordion .card-header .btn {
+    font-size: 18px;
+}
+.welcome-number p {
+    font-size: 13px;
+    padding-left: 5px;
+    padding-bottom: 3px;
+}
+.welcome-number p span {
+    font-size: 16px;
+}
+}
+
+@media screen and (max-width:360px) {
+.welcome-number {
+    padding-left: 0;
+    padding-top: 10px;
+}
+.cta-btn-wrap .banner-btn {
+    padding: 11px 25px;
+}
+.choose-carousel {
+    padding: 30px 0px;
+}
+.portfolio-tab .nav-tabs .nav-link {
+    padding: 5px 10px;
+    margin-left: 7px;
+    font-size: 12px;
+}
+}

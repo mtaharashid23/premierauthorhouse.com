@@ -1,0 +1,521 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+.popupform.hallow-form .underlay{    /*background: url(../images/pop-wab.png) repeat scroll center center rgba(27, 38, 57, 0.9);*/    background: rgba(31, 31, 31, 0.9);  }
+
+
+
+.popupform .hbanner-form ul li input[type="text"],
+.popupform .hbanner-form ul li input[type="email"],
+.popupform  .hbanner-form ul li textarea,
+.popupform .hbanner-form ul li input[type="tel"],
+.popupform  .hbanner-form ul li select {
+    background: #000000;
+    border: #636363 1px solid;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    color: #fff;
+    font-size: 12px;
+    box-shadow: #0000005e 0px 2px 5px;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+.popupform .hbanner-form li.full-line {
+    margin: 0 0 10px 0;
+    width: 100%;
+}
+.popupform .hbanner-form li input[type="submit"] {
+    background: #2b42b8;
+    border: #2b42b8 1px solid;
+    width: 100%;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 9px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    text-shadow: none;
+}
+
+.popupform.hallow-form h2 + p {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    line-height: normal;
+    padding: 0 20px  20px;
+}
+
+.popupform.hallow-form{
+    width: 100%;
+    max-width: 710px;
+    border-radius: 0;
+    background: #1b2539;
+    background: transparent;
+    /* height: 470px; */
+    padding: 0 0 40px;
+    border: none;
+}
+
+.hallow-form h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffd983;
+    font-family: 'Lato', sans-serif;
+    line-height: 40px;
+    padding: 0;
+    border: none;
+    margin-top: 70px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.hallow-form h2 strong {
+    display: block;
+    /* font-size: 41px; */
+}
+
+img.pop-seal {
+    /* max-width: 90%; */
+    margin-bottom: 2em;
+    margin-top: 1em;
+    /*margin-left: 3em;*/
+}
+
+.hallow-form .hbanner-form {
+    width: 100%;
+    max-width: 360px;
+    right: 0;
+    float: right;
+    background: #00000085;
+    color: #fff;
+    padding: 23px 23px;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-shadow: #0000004a 0 7px 24px;
+    position: relative;
+}
+
+.popupform.hallow-form .modal-body1 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    /* background: red; */
+}
+
+.popupform .hbanner-form li.half-line {
+    width: 100% !important;
+    float: left;
+    margin: 0 0 10px;
+}
+
+.popupform .hbanner-form li.half-line:nth-of-type(2n+2) {
+    /* float: right; */
+}
+
+.popupform.hallow-form .modal-body1 .col-md-7 , .popupform.hallow-form .modal-body1 .col-md-5 {
+    height: 100%;
+}
+
+.popupform.hallow-form  .modal-footer{
+	/* display:none */
+	top: 20px;
+	right: 20px;
+}
+
+.popupform.hallow-form .hmbanner-form{
+	display:block
+}
+
+.popupform.hallow-form .hmbanner-form h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+
+.popupform.hallow-form .hmbanner-form:after {
+    content: "";
+    background: #2b42b8;
+    width: 6px;
+    height: 40px;
+    position: absolute;
+    left: 2px;
+    top: 0;
+    display: none;
+}
+
+
+.popupform .modal-body1 strong.fsubtext span {
+    color: #ffff;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.popupform.hallow-form .hmbanner-form h3 span {
+    color: #3354ff;
+}
+
+.placeholder1::placeholder { color: #fff;  }
+.placeholder1:-ms-input-placeholder {   color: #fff;  }
+.placeholder1::-ms-input-placeholder {  color: #fff;  }
+
+.popupform.hallow-form .hmbanner-form  h4 {color: #fff;font-weight: 600;margin-top: 0;margin-bottom: 1em;padding-left: 0;}
+.popupform.hallow-form .hmbanner-form h4:before {border-radius: 0;width: 4px;background: #da2a3a;display: none;}
+
+
+
+
+
+
+
+/* Mid Year Sale */
+
+.popupform.hallow-form.midy-form .underlay{    /*background: url(../images/pop-wab.png) repeat scroll center center rgba(27, 38, 57, 0.9);*/    background: rgba(31, 31, 31, 0.9);  }
+
+
+.popupform.hallow-form .hmbanner-form ul li input[type="text"],
+.popupform.hallow-form .hmbanner-form ul li input[type="email"],
+.popupform.hallow-form  .hmbanner-form ul li textarea,
+.popupform.hallow-form .hmbanner-form ul li input[type="tel"],
+.popupform.hallow-form  .hmbanner-form ul li select {
+    background: #fff;
+    width: 100%;
+    padding: 10px 10px 10px 20px;
+    text-align: left;
+    color: #000;
+    font-size: 13px;
+    box-shadow: #e9eaf3 0px 4px 15px inset;
+    margin: 0;
+    height: 44px;
+    border-radius: 30px;
+    outline: none !important;
+    border: 0;
+    font-family: 'Lato', sans-serif;
+}
+.popupform.hallow-form .hmbanner-form li.full-line {
+    margin: 0 0 10px 0;
+    width: 100%;
+}
+.popupform.hallow-form .hmbanner-form li input[type="submit"] {
+    background: #ff6c00;
+    border: #ff6c00 1px solid;
+    width: 100%;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px;
+    text-transform: uppercase;
+    text-shadow: none;
+    border-radius: 30px;
+    letter-spacing: normal;
+    font-family: 'Lato', sans-serif;
+}
+
+.popupform.hallow-form.midy-form .modal {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 0;
+    background: #1b2539;
+    background: transparent;
+    /* height: 470px; */
+    padding: 0;
+}
+
+.midy-form h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    line-height: 40px;
+    letter-spacing: -1px;
+}
+
+.midy-form h2 strong {
+    display: block;
+    /* font-size: 41px; */
+}
+
+.midy-form img.pop-seal {
+    /* max-width: 90%; */
+    margin-bottom: 1em;
+    margin-top: 0;
+    /*margin-left: 3em;*/
+}
+
+.popupform.hallow-form .hmidy-form {
+    width: 100%;
+    right: 0;
+    float: right;
+    color: #fff;
+    padding: 10px 40px 0 0;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    border-radius: 10px;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.popupform.hallow-form .hmidy-form:before {
+    /*content: "";*/
+    /*position: absolute;*/
+    /*top: -4px;*/
+    /*width: 100%;*/
+    /*height: 102%;*/
+    /*border-radius: inherit;*/
+    /*background: #ffd983;*/
+    /*left: 0px;*/
+    /*z-index: -1;*/
+    /*transform: skew(-0.0051turn, -3deg);*/
+}
+
+.popupform.hallow-form.midy-form .modal-body1 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    /* background: red; */
+}
+
+.popupform.hallow-form.midy .hmbanner-form li.half-line {
+    width: 100% !important;
+    float: left;
+    margin: 0 0 10px;
+}
+
+.popupform.hallow-form .hmbanner-form li.half-line {
+    width: 100% !important;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.popupform.hallow-form.midy-form .modal-body1 .col-md-7 ,.popupform.hallow-form .modal-body1 .col-md-5 {
+    height: 100%;
+}
+
+.popupform.hallow-form.midy-form  .modal-footer{
+	/* display:none */
+	top: 20px;
+	right: 20px;
+}
+
+.popupform.hallow-form.popupform.hallow-form{
+	display:block;
+	background-image: url('../images/christ-popup0cc1.html');
+	background-position: center top;
+	background-repeat: no-repeat;
+	/* padding-bottom: 10px; */
+	background-size: 100% 100%;
+}
+
+.popupform.hallow-form.popupform.hallow-form h3 {
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.popupform.hallow-form.popupform.hallow-form:after {
+    content: "";
+    background: #2b42b8;
+    width: 6px;
+    height: 40px;
+    position: absolute;
+    left: 2px;
+    top: 0;
+    display: none;
+}
+
+.popupform.hallow-form.midy-form .modal-body1 strong.fsubtext span {
+    color: #ffff;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.popupform.hallow-form.popupform.hallow-form h3 span {
+    color: #ffd983;
+    vertical-align: baseline;
+}
+
+.popupform.hallow-form.midy-form .placeholder1::placeholder { color: #000;  }
+.popupform.hallow-form.midy-form .placeholder1:-ms-input-placeholder {   color: #000;  }
+.popupform.hallow-form.midy-form .placeholder1::-ms-input-placeholder {  color: #000;  }
+
+.popupform.hallow-form.popupform.hallow-form  h4 {color: #fff;font-weight: 600;margin-top: 0;margin-bottom: 0;padding-left: 0;font-size: 28px;font-family: 'Lato', sans-serif;margin-top: 50px;text-align: center;font-weight: 500;text-transform: uppercase;letter-spacing: -1px;}
+.popupform.hallow-form.popupform.hallow-form h4:before {border-radius: 0;width: 4px;background: #da2a3a;display: none;}
+
+
+.popupform.hallow-form.popupform.hallow-form h4 span {
+    vertical-align: bottom;
+    font-weight: 600;
+}
+
+.popupform.hallow-form .hmbanner-form ul li textarea {
+    height: 100px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+section.banner {
+    background-color: #202529;
+}
+
+.popupform.hallow-form .modal-body1 .col-md-7 {
+    text-align: center;
+    position: relative;
+
+}
+
+.popupform.hallow-form .modal-body1 .col-md-7:after {
+      content: "";
+      position: absolute;
+      right: -40px;
+      width: 92px;
+      height: 127px;
+      top: 40%;
+      background: url(../images/pleave.html) repeat scroll center top;
+      z-index: 1;
+}
+
+.midy-form h2 span {
+    vertical-align: baseline;
+    color: #f8c91b;
+    position: relative;
+}
+
+.midy-form h2 span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    bottom: -10px;
+    border-radius: 10px;
+    background: rgb(221,53,30);
+    background: -moz-linear-gradient(left,  rgba(221,53,30,1) 0%, rgba(227,108,30,1) 100%);
+    background: -webkit-linear-gradient(left,  rgba(221,53,30,1) 0%,rgba(227,108,30,1) 100%);
+    background: linear-gradient(to right,  rgba(221,53,30,1) 0%,rgba(227,108,30,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd351e', endColorstr='#e36c1e',GradientType=1 );
+}
+
+.hallow-form h2 strong span {
+    color: #25c4b6;
+}
+.popupform.hallow-form ul li i {
+    display: none;
+}
+
+.popupform.hallow-form .fancybox-close-small {
+    /*position: fixed;*/
+    /*right: 10px; */
+    top: -10px;
+    right: -10px;
+    background-color: #8a5800;
+    color: #fff;
+    border: 0;
+    line-height: 5;
+    color: #fff !important;
+    /* width: 30px; */
+    /* height: 30px; */
+}
+.popupform.hallow-form  ul li {
+    margin: 0;
+}
+
+.popupform.hallow-form h2 + p:before {content: "";position: absolute;left: 0;width: 130px;height: 6px;margin: 0 auto;right: 0;bottom: 0;background: #ff5553;border-radius: 10px;}
+
+.popupform.hallow-form .fancybox-close-small:after {
+    color: #fff;
+    right: 7px;
+    top: 5px;
+}
+
+
+
+img.poplefty {
+    position: absolute;
+    left: 0;
+    max-width: unset;
+    left: -86px;
+    top: -200px;
+    z-index: 0;
+}
+
+p.txtbottom {
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 0;
+    padding-right: 40px;
+    font-weight: 300;
+    clear: both;
+}
+.popupform.hallow-form.popupform.hallow-form h4 span {
+}
+
+.popupform.hallow-form .fancybox-close-small {
+    right: -20px;
+    top: -20px;
+}
+
+.popupform.hallow-form .modal-body1:after {content: "";position: absolute;right: -8px;width: 83px;height: 123px;background: url(../images/chsticker.html) repeat scroll right top;top: 3px;}
+
+p.txtbottom span {
+    color: #ffd983;
+    vertical-align: baseline;
+}
+
+@media only screen and ( max-width:850px ){
+
+.popupform.hallow-form .modal-body1:after{
+    display:none;
+}
+
+body .popupform.hallow-form.popupform.hallow-form h3 {
+    font-size: 14px;
+}
+
+body .popupform.hallow-form .hmbanner-form li input[type="submit"] {
+    font-size: 13px;
+}
+
+body p.txtbottom br {
+    display: none;
+}
+
+body .popupform.hallow-form .hmbanner-form ul li textarea {
+    height: 70px;
+}
+
+body .popupform.hallow-form .modal-body1 .col-md-7 {
+    display: none;
+}
+
+body .popupform.hallow-form .modal-body1 {
+    display: block;
+    padding: 20px;
+}
+
+body .popupform.hallow-form .hmidy-form {
+    max-width: 100%;
+    padding: 0;
+}
+div#popupform {max-width: 90%;background: #301d02;border: 5px solid #fff;padding-bottom: 0;border-radius: 15px;}
+img.poplefty {    display: none;}
+p.txtbottom {display: block;padding-right: 0;}
+.popupform.hallow-form.popupform.hallow-form h4 {margin-bottom: 0;margin-top: 0;font-size: 20px;}
+
+}
