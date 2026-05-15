@@ -462,10 +462,13 @@ ul {
     position: relative;
 }
 .feature-box-text {
+    display: flex;
     position: absolute;
     width: 100%;
     bottom: 0;
     text-align: center;
+    flex-direction: column;
+    align-items: center;
 }
 .feature-box-text h3{
     position: relative;
