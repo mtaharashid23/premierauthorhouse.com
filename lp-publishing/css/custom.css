@@ -2407,8 +2407,9 @@ display:none
 }
 
 .navbar-brand img {
-    width: 200px;
-    /*filter: invert(1);*/
+    width: 150px;
+    filter: brightness(0) saturate(100%) invert(70%) sepia(52%) saturate(3976%) hue-rotate(137deg) brightness(99%) contrast(87%);
+    padding: 14px 0;
 }
 
 .header-row-st {
