@@ -161,3 +161,32 @@ AOS.init({
 
 });
     
+
+/* Button Click Open Chat */
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Sab buttons jinki class "chatt" hai
+    const chatButtons = document.querySelectorAll(".chatt");
+
+    chatButtons.forEach(function(btn) {
+
+        btn.addEventListener("click", function(e) {
+            e.preventDefault();
+
+            if (typeof Tawk_API !== "undefined") {
+
+                // Agar chat open hai tou close karo
+                if (Tawk_API.isChatMaximized()) {
+                    Tawk_API.minimize();
+                } 
+                // Warna open karo
+                else {
+                    Tawk_API.maximize();
+                }
+
+            }
+        });
+
+    });
+
+});
