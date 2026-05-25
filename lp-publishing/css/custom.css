@@ -2503,3 +2503,25 @@ display:none
     left: 0px;
     background: hsl(0deg 0% 0% / 12%);
 }
+
+#toast-container > .toast-success {
+    background-color: #29BDBA !important; /* Updated Success Color */
+    opacity: 1 !important;
+    box-shadow: 0 4px 12px rgba(41, 189, 186, 0.3) !important;
+}
+
+#toast-container > .toast-error {
+    background-color: #bd362f !important; /* Error Red */
+    opacity: 1 !important;
+}
+
+/* Position adjustment (Top Left as per previous request) */
+.toast-top-right {
+    top: 20px;
+    right: 20px;
+}
+
+/* Agar aap icon ka color bhi white rakhna chahte hain */
+.toast-success .toast-message, .toast-success .toast-title {
+    color: #ffffff !important;
+}

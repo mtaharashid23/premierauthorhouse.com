@@ -22,39 +22,39 @@ $('.slick')
         autoplaySpeed: 1500
 
     }).on('beforeChange', (event, slick, current, next) => {
-    $('.slick-slide.gt2').removeClass('gt2');
-    $('.slick-slide.gt1').removeClass('gt1');
-    $('.slick-slide.lt1').removeClass('lt1');
-    $('.slick-slide.lt2').removeClass('lt2');
+        $('.slick-slide.gt2').removeClass('gt2');
+        $('.slick-slide.gt1').removeClass('gt1');
+        $('.slick-slide.lt1').removeClass('lt1');
+        $('.slick-slide.lt2').removeClass('lt2');
 
-    const lt2 = (current < next && current > 0) ? current - 1 : next - 2;
-    const lt1 = (current < next && current > 0) ? current : next - 1;
-    const gt1 = (current < next || next === 0) ? next + 1 : current;
-    const gt2 = (current < next || next === 0) ? next + 2 : current + 1;
+        const lt2 = (current < next && current > 0) ? current - 1 : next - 2;
+        const lt1 = (current < next && current > 0) ? current : next - 1;
+        const gt1 = (current < next || next === 0) ? next + 1 : current;
+        const gt2 = (current < next || next === 0) ? next + 2 : current + 1;
 
-    $(`.slick-slide[data-slick-index="${lt2}"]`).addClass('lt2');
-    $(`.slick-slide[data-slick-index="${lt1}"]`).addClass('lt1');
-    $(`.slick-slide[data-slick-index="${gt1}"]`).addClass('gt1');
-    $(`.slick-slide[data-slick-index="${gt2}"]`).addClass('gt2');
+        $(`.slick-slide[data-slick-index="${lt2}"]`).addClass('lt2');
+        $(`.slick-slide[data-slick-index="${lt1}"]`).addClass('lt1');
+        $(`.slick-slide[data-slick-index="${gt1}"]`).addClass('gt1');
+        $(`.slick-slide[data-slick-index="${gt2}"]`).addClass('gt2');
 
-    // Clone processing when moving from 5 to 0
-    if (current === 5 && next === 0) {
-        $(`.slick-slide[data-slick-index="${current - 1}"]`).addClass('lt2');
-        $(`.slick-slide[data-slick-index="${current}"]`).addClass('lt1');
-        $(`.slick-slide[data-slick-index="${current + 2}"]`).addClass('gt1');
-        $(`.slick-slide[data-slick-index="${current + 3}"]`).addClass('gt2');
-    }
+        // Clone processing when moving from 5 to 0
+        if (current === 5 && next === 0) {
+            $(`.slick-slide[data-slick-index="${current - 1}"]`).addClass('lt2');
+            $(`.slick-slide[data-slick-index="${current}"]`).addClass('lt1');
+            $(`.slick-slide[data-slick-index="${current + 2}"]`).addClass('gt1');
+            $(`.slick-slide[data-slick-index="${current + 3}"]`).addClass('gt2');
+        }
 
-    // Clone processing when moving from 0 to 5
-    if (current === 0 && next === 5) {
-        $(`.slick-slide[data-slick-index="${current - 1}"]`).addClass('gt2');
-        $(`.slick-slide[data-slick-index="${current}"]`).addClass('gt1');
-        $(`.slick-slide[data-slick-index="${current - 2}"]`).addClass('lt1');
-        $(`.slick-slide[data-slick-index="${current - 3}"]`).addClass('lt2');
-    }
+        // Clone processing when moving from 0 to 5
+        if (current === 0 && next === 5) {
+            $(`.slick-slide[data-slick-index="${current - 1}"]`).addClass('gt2');
+            $(`.slick-slide[data-slick-index="${current}"]`).addClass('gt1');
+            $(`.slick-slide[data-slick-index="${current - 2}"]`).addClass('lt1');
+            $(`.slick-slide[data-slick-index="${current - 3}"]`).addClass('lt2');
+        }
 
-    // console.log('beforeChange', current, ':', lt2, lt1, next, gt1, gt2);
-});
+        // console.log('beforeChange', current, ':', lt2, lt1, next, gt1, gt2);
+    });
 
 
 $('.myBtn').click(function () {
@@ -70,9 +70,9 @@ $('.close').click(function (event) {
 });
 
 window.location.hash ||
-setTimeout(function () {
-    $(".myModal").fadeIn()
-}, 1e4);
+    setTimeout(function () {
+        $(".myModal").fadeIn()
+    }, 1e4);
 
 var MODULE = MODULE || {};
 
@@ -118,9 +118,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Sab buttons jinki class "chatt" hai
     const chatButtons = document.querySelectorAll(".chatt");
 
-    chatButtons.forEach(function(btn) {
+    chatButtons.forEach(function (btn) {
 
-        btn.addEventListener("click", function(e) {
+        btn.addEventListener("click", function (e) {
             e.preventDefault();
 
             if (typeof Tawk_API !== "undefined") {
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Agar chat open hai tou close karo
                 if (Tawk_API.isChatMaximized()) {
                     Tawk_API.minimize();
-                } 
+                }
                 // Warna open karo
                 else {
                     Tawk_API.maximize();
@@ -139,4 +139,73 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
+});
+
+$(document).ready(function () {
+    // Toastr Configuration
+    toastr.options = {
+        "closeButton": true,
+        "debug": false,
+        "newestOnTop": true,
+        "progressBar": true,
+        "positionClass": "toast-top-right",
+        "preventDuplicates": false,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    };
+
+    $('.leadForm').on('submit', function (e) {
+        e.preventDefault();
+        
+        var $form = $(this);
+        var $submitBtn = $form.find('button[type="submit"]');
+        var originalBtnText = $submitBtn.text(); // Pehle wala text save kar liya
+        
+        // Form se name nikalna thank you page ke liye
+        var userName = $form.find('input[name="name"]').val();
+        
+        $submitBtn.prop('disabled', true).text('Processing...');
+
+        $.ajax({
+            type: 'POST',
+            url: 'contact-process.php',
+            data: new FormData(this),
+            processData: false,
+            contentType: false,
+            success: function (response) {
+                try {
+                    var res = JSON.parse(response);
+                    if (res.status == 'success') {
+                        // Success Toast (#29BDBA color CSS se handle hoga)
+                        toastr.success(res.message, 'Success!');
+                        
+                        $form[0].reset(); 
+                        
+                        // Thank you page par redirect + Name parameter
+                        setTimeout(function () {
+                            window.location.href = '../thank-you?name=' + encodeURIComponent(userName);
+                        }, 2500);
+                    } else {
+                        // Error Toast
+                        toastr.error(res.message, 'Error!');
+                        $submitBtn.prop('disabled', false).text(originalBtnText);
+                    }
+                } catch (e) {
+                    toastr.error('Internal Server Error', 'Error!');
+                    $submitBtn.prop('disabled', false).text(originalBtnText);
+                }
+            },
+            error: function () {
+                toastr.error('Could not connect to server', 'Network Error!');
+                $submitBtn.prop('disabled', false).text(originalBtnText);
+            }
+        });
+    });
 });

@@ -1,27 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You - Premier Author House</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You — Premier Author House</title>
+    <meta name="robots" content="noindex, nofollow" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=El+Messiri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
     <style>
-        :root { --primary-color: #f49834; }
-        body { background: #f8f9fa; display: flex; align-items: center; justify-content: center; height: 100vh; font-family: sans-serif; }
-        .thank-you-card { text-align: center; padding: 40px; background: #fff; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-top: 5px solid var(--primary-color); }
-        .thank-you-card h1 { color: var(--primary-color); font-weight: bold; }
-        .btn-home { background: var(--primary-color); color: white; border: none; padding: 10px 25px; border-radius: 5px; text-decoration: none; margin-top: 20px; display: inline-block; }
-        .btn-home:hover { background: #e38a2a; color: white; }
+        :root {
+            --primary-color: #f49834;
+            --dark-bg: #121212;
+            --text-dark: #1a1a1a;
+            --text-light: #555555;
+            --f-display: 'El Messiri', sans-serif;
+            --f-body: 'Montserrat', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--f-body);
+            background-color: #fff;
+            color: var(--text-dark);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ── Thank You Page Layout ── */
+        .ty-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+            background: radial-gradient(circle at center, #ffffff 0%, #fdfdfd 100%);
+        }
+
+        /* Background Large Text */
+        .ty-bg-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: var(--f-display);
+            font-weight: 700;
+            font-size: clamp(100px, 20vw, 250px);
+            color: rgba(244, 152, 52, 0.04);
+            pointer-events: none;
+            white-space: nowrap;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            z-index: 0;
+        }
+
+        .ty-content {
+            position: relative;
+            z-index: 1;
+            max-width: 650px;
+            width: 100%;
+        }
+
+        /* Animated Icon */
+        .ty-icon {
+            width: 100px;
+            height: 100px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            font-size: 2.8rem;
+            color: #fff;
+            box-shadow: 0 15px 30px rgba(244, 152, 52, 0.3);
+            opacity: 0;
+            transform: scale(0.4);
+        }
+
+        .ty-label {
+            font-family: var(--f-body);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            display: block;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .ty-title {
+            font-family: var(--f-display);
+            font-size: clamp(2.8rem, 7vw, 4.8rem);
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 25px;
+            color: var(--text-dark);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .ty-title em {
+            font-style: normal;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .ty-desc {
+            font-size: 1.05rem;
+            font-weight: 400;
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 40px;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        /* Details Card */
+        .ty-details {
+            background: #fff;
+            border: 1px solid #f1f1f1;
+            border-left: 5px solid var(--primary-color);
+            padding: 35px;
+            margin-bottom: 45px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+            text-align: left;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .ty-details h4 {
+            font-family: var(--f-display);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+        }
+
+        .ty-details ul { list-style: none; }
+        .ty-details ul li {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px 0;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            border-bottom: 1px solid #fafafa;
+        }
+
+        .ty-details ul li:last-child { border-bottom: none; }
+        .ty-details ul li i { color: var(--primary-color); font-size: 1.1rem; }
+
+        /* Buttons */
+        .ty-actions {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 18px 40px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            border-radius: 4px;
+            transition: all 0.4s ease;
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background: transparent;
+            color: var(--primary-color);
+            box-shadow: 0 10px 20px rgba(244, 152, 52, 0.2);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--text-dark);
+            padding: 18px 40px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            border-radius: 4px;
+            border: 2px solid #e0e0e0;
+            transition: all 0.4s ease;
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        /* Social Icons */
+        .ty-social {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 50px;
+            opacity: 0;
+        }
+
+        .ty-social a {
+            width: 46px;
+            height: 46px;
+            background: #f9f9f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .ty-social a:hover {
+            background: var(--primary-color);
+            color: #fff;
+            transform: translateY(-5px);
+        }
+
+        .ty-footer {
+            margin-top: 50px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #aaa;
+            opacity: 0;
+        }
+
+        .ty-footer a { color: var(--primary-color); text-decoration: none; font-weight: 600; }
+
+        #confettiCanvas {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 2;
+        }
     </style>
 </head>
+
 <body>
 
-<div class="thank-you-card">
-    <div style="font-size: 60px; color: var(--primary-color);">✓</div>
-    <h1>THANK YOU!</h1>
-    <p>Your request has been received. Our team from <strong>Premier Author House</strong> will contact you shortly.</p>
-    <a href="index.html" class="btn-home">Back to Home</a>
-</div>
+    <canvas id="confettiCanvas"></canvas>
 
+    <section class="ty-page">
+        <div class="ty-bg-text">Success</div>
+
+        <div class="ty-content">
+            <div class="ty-icon" id="tyIcon"><i class="fa fa-check"></i></div>
+            
+            <span class="ty-label" id="tyLabel">Submission Received</span>
+            
+            <h1 class="ty-title" id="tyTitle">Thank <em>You</em></h1>
+            
+            <p class="ty-desc" id="tyDesc">
+                Your publishing inquiry has been successfully submitted. <br>
+                Our experts at <strong>Premier Author House</strong> are ready to bring your story to life.
+            </p>
+
+            <div class="ty-details" id="tyDetails">
+                <h4>What Happens Next?</h4>
+                <ul>
+                    <li><i class="fa-solid fa-circle-check"></i> <strong>Initial Review:</strong> Our editors will review your project details.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> <strong>Consultation Call:</strong> A senior consultant will contact you within 24 hours.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> <strong>Roadmap:</strong> We will provide a customized publishing plan for your book.</li>
+                </ul>
+            </div>
+
+            <div class="ty-actions" id="tyActions">
+                <a class="btn-primary" href="/">Back to Home</a>                
+            </div>
+
+            <div class="ty-social" id="tySocial">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+
+            <p class="ty-footer" id="tyFooter">
+                Need immediate help? Reach us at <a href="mailto:info@premierauthorhouse.com">info@premierauthorhouse.com</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // GSAP Entrance Animations
+            const tl = gsap.timeline({ delay: 0.3 });
+
+            tl.to('#tyIcon', { opacity: 1, scale: 1, duration: 0.7, ease: 'back.out(1.8)' })
+              .to('#tyLabel', { opacity: 1, y: 0, duration: 0.5 }, "-=0.3")
+              .to('#tyTitle', { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out' }, "-=0.4")
+              .to('#tyDesc', { opacity: 1, y: 0, duration: 0.6 }, "-=0.4")
+              .to('#tyDetails', { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out' }, "-=0.3")
+              .to('#tyActions', { opacity: 1, y: 0, duration: 0.6 }, "-=0.2")
+              .to('#tySocial', { opacity: 1, duration: 0.6 }, "-=0.1")
+              .to('#tyFooter', { opacity: 1, duration: 0.5 }, "-=0.2");
+
+            launchConfetti();
+        });
+
+        /* --- Elegant Confetti Effect --- */
+        function launchConfetti() {
+            const canvas = document.getElementById('confettiCanvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            const colors = ['#f49834', '#1a1a1a', '#e0e0e0', '#ffcc80'];
+            const particles = [];
+
+            for (let i = 0; i < 80; i++) {
+                particles.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height - canvas.height,
+                    w: Math.random() * 7 + 4,
+                    h: Math.random() * 5 + 2,
+                    color: colors[Math.floor(Math.random() * colors.length)],
+                    vy: Math.random() * 2 + 1.5,
+                    vx: (Math.random() - 0.5) * 1.5,
+                    alpha: 1
+                });
+            }
+
+            function draw() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                particles.forEach(p => {
+                    ctx.globalAlpha = p.alpha;
+                    ctx.fillStyle = p.color;
+                    ctx.fillRect(p.x, p.y, p.w, p.h);
+                    p.y += p.vy;
+                    p.x += p.vx;
+                    if (p.y > canvas.height - 150) p.alpha -= 0.01;
+                });
+                if (particles.length > 0 && particles[0].alpha > 0) {
+                    requestAnimationFrame(draw);
+                } else {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                }
+            }
+            draw();
+        }
+
+        window.addEventListener('resize', () => {
+            const canvas = document.getElementById('confettiCanvas');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
 </body>
 </html>
