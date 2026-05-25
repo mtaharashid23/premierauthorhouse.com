@@ -34,18 +34,18 @@ lenisSetup()
 // 	duration:1,
 
 // });
-$( document ).ready(function() {
+$(document).ready(function () {
 	$(".feature-carousel").owlCarousel({
 		loop: true,
 		margin: 30,
-		nav:false,
+		nav: false,
 		// nav: true,
 		// navText: ['<i class="fas fa-arrow-left"></i>', '<i class="fas fa-arrow-right"></i>'],
 		dots: false,
 		mouseDrag: true,
-		autoplay:true,
-		autoplayTimeout:3000,
-		autoplayHoverPause:true,
+		autoplay: true,
+		autoplayTimeout: 3000,
+		autoplayHoverPause: true,
 		responsive: {
 			0: {
 				items: 1
@@ -61,14 +61,14 @@ $( document ).ready(function() {
 	$(".choose-carousel").owlCarousel({
 		loop: true,
 		margin: 30,
-		nav:false,
+		nav: false,
 		nav: true,
 		navText: ['<i class="fas fa-arrow-left"></i>', '<i class="fas fa-arrow-right"></i>'],
 		dots: false,
 		mouseDrag: true,
-		autoplay:false,
-		autoplayTimeout:3000,
-		autoplayHoverPause:true,
+		autoplay: false,
+		autoplayTimeout: 3000,
+		autoplayHoverPause: true,
 		responsive: {
 			0: {
 				items: 1
@@ -84,14 +84,14 @@ $( document ).ready(function() {
 	$(".testi-carousel").owlCarousel({
 		loop: true,
 		margin: 30,
-		nav:false,
+		nav: false,
 		nav: true,
 		navText: ['<i class="fas fa-arrow-left"></i>', '<i class="fas fa-arrow-right"></i>'],
 		dots: false,
 		mouseDrag: true,
-		autoplay:false,
-		autoplayTimeout:3000,
-		autoplayHoverPause:true,
+		autoplay: false,
+		autoplayTimeout: 3000,
+		autoplayHoverPause: true,
 		responsive: {
 			0: {
 				items: 1
@@ -152,41 +152,106 @@ $( document ).ready(function() {
 			}
 		}
 	}));
-AOS.init({
-	duration: 1000,
-    disable: function() {
-        return window.innerWidth < 800;
-    }
-});
+	AOS.init({
+		duration: 1000,
+		disable: function () {
+			return window.innerWidth < 800;
+		}
+	});
 
 });
-    
+
 
 /* Button Click Open Chat */
 document.addEventListener("DOMContentLoaded", function () {
 
-    // Sab buttons jinki class "chatt" hai
-    const chatButtons = document.querySelectorAll(".chatt");
+	// Sab buttons jinki class "chatt" hai
+	const chatButtons = document.querySelectorAll(".chatt");
 
-    chatButtons.forEach(function(btn) {
+	chatButtons.forEach(function (btn) {
 
-        btn.addEventListener("click", function(e) {
-            e.preventDefault();
+		btn.addEventListener("click", function (e) {
+			e.preventDefault();
 
-            if (typeof Tawk_API !== "undefined") {
+			if (typeof Tawk_API !== "undefined") {
 
-                // Agar chat open hai tou close karo
-                if (Tawk_API.isChatMaximized()) {
-                    Tawk_API.minimize();
-                } 
-                // Warna open karo
-                else {
-                    Tawk_API.maximize();
+				// Agar chat open hai tou close karo
+				if (Tawk_API.isChatMaximized()) {
+					Tawk_API.minimize();
+				}
+				// Warna open karo
+				else {
+					Tawk_API.maximize();
+				}
+
+			}
+		});
+
+	});
+
+});
+
+$(document).ready(function () {
+    // Toastr Configuration
+    toastr.options = {
+        "closeButton": true,
+        "debug": false,
+        "newestOnTop": true,
+        "progressBar": true,
+        "positionClass": "toast-top-left", // Aapki requirement: Top Left
+        "preventDuplicates": false,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    };
+
+    $('.leadForm').on('submit', function (e) {
+        e.preventDefault();
+        
+        var $form = $(this);
+        var $submitBtn = $form.find('button[type="submit"]');
+        
+        $submitBtn.prop('disabled', true).text('Processing...');
+
+        $.ajax({
+            type: 'POST',
+            url: 'contact-process.php',
+            data: new FormData(this),
+            processData: false,
+            contentType: false,
+            success: function (response) {
+                try {
+                    var res = JSON.parse(response);
+                    if (res.status == 'success') {
+                        // Success Toast
+                        toastr.success(res.message, 'Success!');
+                        
+                        $form[0].reset(); // Form clear karne ke liye
+                        
+                        // 2 second baad thank you page par redirect
+                        setTimeout(function () {
+                            window.location.href = 'thank-you.php';
+                        }, 2500);
+                    } else {
+                        // Error Toast
+                        toastr.error(res.message, 'Error!');
+                        $submitBtn.prop('disabled', false).text('Submit');
+                    }
+                } catch (e) {
+                    toastr.error('Internal Server Error', 'Error!');
+                    $submitBtn.prop('disabled', false).text('Submit');
                 }
-
+            },
+            error: function () {
+                toastr.error('Could not connect to server', 'Network Error!');
+                $submitBtn.prop('disabled', false).text('Submit');
             }
         });
-
     });
-
 });

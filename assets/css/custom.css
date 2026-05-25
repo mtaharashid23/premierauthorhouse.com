@@ -1792,3 +1792,17 @@ a#entry-box_close {
 .logo a span {
     color: var(--primary-color);
 }
+
+ /* Toastr Brand Customization */
+    #toast-container > .toast-success {
+        background-color: #f49834 !important; /* Premier Author House Orange */
+        opacity: 1;
+    }
+    #toast-container > .toast-error {
+        background-color: #bd362f !important; /* Red for errors */
+        opacity: 1;
+    }
+    .toast-top-left {
+        top: 20px;
+        left: 20px;
+    }
