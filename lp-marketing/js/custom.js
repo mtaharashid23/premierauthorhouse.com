@@ -233,10 +233,7 @@ $(document).ready(function () {
         
         var $form = $(this);
         var $submitBtn = $form.find('button[type="submit"]');
-        var originalBtnText = $submitBtn.text(); // Pehle wala text save kar liya
-        
-        // Form se name nikalna thank you page ke liye
-        var userName = $form.find('input[name="name"]').val();
+        var originalBtnText = $submitBtn.text(); 
         
         $submitBtn.prop('disabled', true).text('Processing...');
 
@@ -250,14 +247,14 @@ $(document).ready(function () {
                 try {
                     var res = JSON.parse(response);
                     if (res.status == 'success') {
-                        // Success Toast (#29BDBA color CSS se handle hoga)
+                        // Success Toast
                         toastr.success(res.message, 'Success!');
                         
                         $form[0].reset(); 
                         
-                        // Thank you page par redirect + Name parameter
+                        // Direct Redirect to thank-you page
                         setTimeout(function () {
-                            window.location.href = '../thank-you?name=' + encodeURIComponent(userName);
+                            window.location.href = '../thank-you';
                         }, 2500);
                     } else {
                         // Error Toast
