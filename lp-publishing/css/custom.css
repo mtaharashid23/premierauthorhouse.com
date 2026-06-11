@@ -1534,7 +1534,7 @@ li.active a {
     border-radius: 50%;
     opacity: 1;
     width: 40px;
-    background: #ed1c24;
+    background: #000;
     text-align: center;
 }
 
@@ -1570,7 +1570,7 @@ background-size: 100% 100%;}  */
 
 .popupstyle {
     display: block;
-    background: url(../images/flash-bg.webp);
+    background: #01838c;
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1578,7 +1578,7 @@ background-size: 100% 100%;}  */
     min-height: 501px;
     width: 736px;
     border-radius: 20px;
-    border: 3px solid #ed1c24;
+    border: 3px solid #01838c;
 }
 
 .spacehight {
@@ -1607,7 +1607,7 @@ background-size: 100% 100%;}  */
     margin-top: 14px !important;
     font-size: 17px !important;
     text-transform: uppercase;
-    background: #ed1c24;
+    background: #000;
 }
 
 .formpopup input {
