@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thank You — Premier Author House</title>
     <meta name="robots" content="noindex, nofollow" />
-
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,6 +14,26 @@
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+      <script>
+      const params = new URLSearchParams(window.location.search);
+
+const email = params.get('email');
+const phone = params.get('phone');
+console.log('email'+email, 'phone'+phone)
+// Add this script right after your base UET tag code
+window.uetq = window.uetq || [];
+window.uetq.push('set', { 'pid': { 
+'em': email, //'contoso@example.com', // Replace with the variable that holds the user's email address. 
+ 'ph': phone, //'+14250000000', // Replace with the variable that holds the user's phone number. 
+} });
+
+// Remove query parameters from URL without reloading the page
+window.history.replaceState({}, document.title, window.location.pathname);
+</script>
+
+<script>(function(w, d, t, u, o) {w[u] = w[u] || [], o.ts = (new Date).getTime();var n = d.createElement(t);n.src = "https://bat.bing.net/bat.js?ti=" + o.ti + ("uetq" != u ? "&q=" + u : ""),n.async = 1, n.onload = n.onreadystatechange = function() {var s = this.readyState;s && "loaded" !== s && "complete" !== s ||(o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad"),n.onload = n.onreadystatechange = null)};var i = d.getElementsByTagName(t)[0];i.parentNode.insertBefore(n, i);})(window, document, "script", "uetq", {ti: "343216402",enableAutoSpaTracking: true});</script>
+<!-- You can set default Consent Mode right after the UET tag --><script>window.uetq = window.uetq || [];window.uetq.push('consent', 'default', {'ad_storage': 'denied'});</script>
+ <!-- Implement a cookie banner or another method to collect user consent. When a user grants consent (e.g., selects 'Accept' on your banner), update the consent settings using the command below. --><script>window.uetq = window.uetq || [];window.uetq.push('consent', 'update', {'ad_storage': 'granted'});</script>
 
     <style>
         :root {

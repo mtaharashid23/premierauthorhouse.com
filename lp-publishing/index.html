@@ -22,21 +22,47 @@
     <link rel="stylesheet" type="text/css" href="css/aos.css">
     <script src="js/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API = Tawk_API || {},
-            Tawk_LoadStart = new Date();
-        (function () {
-            var s1 = document.createElement("script"),
-                s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/6a0f763444b4b21c36ed5a16/1jp66bg03';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
-    </script>
-    <!--End of Tawk.to Script-->
+    <script>(function(w, d, t, u, o) {w[u] = w[u] || [], o.ts = (new Date).getTime();var n = d.createElement(t);n.src = "https://bat.bing.net/bat.js?ti=" + o.ti + ("uetq" != u ? "&q=" + u : ""),n.async = 1, n.onload = n.onreadystatechange = function() {var s = this.readyState;s && "loaded" !== s && "complete" !== s ||(o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad"),n.onload = n.onreadystatechange = null)};var i = d.getElementsByTagName(t)[0];i.parentNode.insertBefore(n, i);})(window, document, "script", "uetq", {ti: "343216402",enableAutoSpaTracking: true});</script>
+<!-- You can set default Consent Mode right after the UET tag -->
+ <script>window.uetq = window.uetq || [];window.uetq.push('consent', 'default', {'ad_storage': 'denied'});</script>
+ <!-- Implement a cookie banner or another method to collect user consent. When a user grants consent (e.g., selects 'Accept' on your banner), update the consent settings using the command below. -->
+  <script>window.uetq = window.uetq || [];window.uetq.push('consent', 'update', {'ad_storage': 'granted'});</script>
+    
+    <!-- Start of Zendesk Widget script -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=73fea7f4-7041-4885-885d-bf487d7f632d"> </script>
+<!-- End of Zendesk Widget script -->
+<script>
+    window.addEventListener('load', function () {
+        
+        
+        
+        const openZendeskChat = () => {
+            if (typeof zE !== 'undefined') {
+                zE('webWidget', 'open');
+            }
+        };
+
+       const chatToggle = document.getElementById("chat_toggle");
+      if (chatToggle) {
+        chatToggle.addEventListener("click", function () {
+          openZendeskChat();
+        });
+      }
+
+        // Open chat when a new message is received
+        const interval = setInterval(() => {
+            if (typeof zE !== 'undefined') {
+                zE('webWidget:on', 'chat:unreadMessages', function (numberOfUnreadMessages) {
+                    if (numberOfUnreadMessages > 0) {
+                        openZendeskChat();
+                    }
+                });
+                clearInterval(interval);
+            }
+        }, 500);
+    });
+</script>
+<!-- End of Zendesk Widget script -->
 </head>
 
 <body>
@@ -885,7 +911,7 @@
                             <div id="formResult"></div>
                         </form>
                     </div>
-                    <p class="ps">This exclusive offer is available for a limited time!</p>
+                    <!--<p class="ps">This exclusive offer is available for a limited time!</p>-->
                 </div>
             </div>
         </div>

@@ -162,32 +162,30 @@ $(document).ready(function () {
 });
 
 
-/* Button Click Open Chat */
+
 document.addEventListener("DOMContentLoaded", function () {
 
-	// Sab buttons jinki class "chatt" hai
-	const chatButtons = document.querySelectorAll(".chatt");
+    const chatButtons = document.querySelectorAll(".chatt");
 
-	chatButtons.forEach(function (btn) {
+    const openZendeskChat = function () {
+        if (typeof zE !== "undefined") {
+            zE('webWidget', 'open');
+        } else {
+            var checkZendesk = setInterval(function () {
+                if (typeof zE !== "undefined") {
+                    zE('webWidget', 'open');
+                    clearInterval(checkZendesk);
+                }
+            }, 200);
+        }
+    };
 
-		btn.addEventListener("click", function (e) {
-			e.preventDefault();
-
-			if (typeof Tawk_API !== "undefined") {
-
-				// Agar chat open hai tou close karo
-				if (Tawk_API.isChatMaximized()) {
-					Tawk_API.minimize();
-				}
-				// Warna open karo
-				else {
-					Tawk_API.maximize();
-				}
-
-			}
-		});
-
-	});
+    chatButtons.forEach(function (btn) {
+        btn.addEventListener("click", function (e) {
+            e.preventDefault();
+            openZendeskChat();
+        });
+    });
 
 });
 
@@ -231,12 +229,14 @@ $(document).ready(function () {
                     var res = JSON.parse(response);
                     if (res.status == 'success') {
                         toastr.success(res.message, 'Success!');
-                        
+                        var email = $form.find('input[name="email"]').val();
+                        var phone = $form.find('input[name="phone"]').val();
                         $form[0].reset(); 
                         
                         // Thank you page par simple redirect
                         setTimeout(function () {
-                            window.location.href = 'thank-you';
+                            // window.location.href = 'thank-you';
+                            window.location.href = 'thank-you?email=' + encodeURIComponent(email) + '&phone=' + encodeURIComponent(phone);
                         }, 2500);
                     } else {
                         toastr.error(res.message, 'Error!');
